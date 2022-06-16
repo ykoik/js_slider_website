@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>The js slider WEB</title>
+  <link rel="SHORTCUT ICON" href="bee_mark2.ico">
+  <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+  <header class="header">
+    <h1>The js slider website</h1>
+    <p>
+      header
+    </p>
+  </header>
+  <div class="wrapper">
+    <div class="content">
+      <div class="content_main">
+        <script src=”slider.js”></script>
+
+        <script>
+        function DivBan2Click() {
+              document.location.href = ' ';
+            }
+
+        function DivBanClick() {
+              document.location.href = ' ';
+            }
+
+        window.onload = slideshow();
+
+        function slideshow() {
+        timer0 = setInterval('location.reload()', 3000);
+           }
+
+
+        timer1 = setInterval('timerstart()', 2600);
+
+        for (slide = 0; slide < 1; slide++) {
+        let imgLeft = 80;
+        let direct = 1;
+
+        function timerstart() {
+          imgLeft += 80 * direct;
+          document.getElementById("imgSlide").style.left = imgLeft + "px";
+          setTimeout("timerstart()", 80);
+          }
+
+        document.open();
+        document.writeln("<pre>");
+        document.writeln("<img src='../img/banner1.png' alt='Banner_1' id='imgSlide' onclick='' />");
+        document.writeln("</pre>");
+        document.close();
+
+
+        timer2 = setInterval('timerstart2()', 800);
+
+        for (slide = 0; slide < 1; slide++) {
+
+        let imgLeft2 = 80;
+        let direct2 = 1;
+
+        function timerstart2() {
+          imgLeft2 += 80 * direct2;
+          document.getElementById("imgSlide2").style.left = imgLeft2 + "px";
+          setTimeout('timerstart2()', 80);
+          }
+        document.open();
+        document.writeln("<pre>");
+        document.writeln("<img src='../img/banner2.png' alt='Banner_2' id='imgSlide2' onclick='' />");
+        document.writeln("</pre>");
+        document.close();
+
+        }
+
+        }
+        </script>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>
+    footer
+    </p>
+    <small>
+      &copy;2022 designed by y.koik, All rights reserved. Thank-you!
+    </small>
+  </footer>
+</body>
+</html>
