@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>The js slider WEB</title>
+  <title>The js slider website</title>
   <link rel="SHORTCUT ICON" href="bee_mark2.ico">
   <link rel="stylesheet" href="slider.css">
 </head>
-<body>
+<body class="body">
   <header class="header">
     <h1>The js slider website</h1>
     <p>
@@ -17,7 +17,6 @@
   <div class="wrapper">
     <div class="content">
       <div class="content_main">
-        <script src=”slider.js”></script>
 
         <script>
         function DivBan2Click() {
@@ -43,13 +42,13 @@
 
         function timerstart() {
           imgLeft += 80 * direct;
-          document.getElementById("imgSlide").style.left = imgLeft + "px";
-          setTimeout("timerstart()", 80);
+          document.getElementById('imgSlide').style.left = imgLeft + "px";
+          setTimeout('timerstart()', 80);
           }
 
         document.open();
         document.writeln("<pre>");
-        document.writeln("<img src='../img/banner1.png' alt='Banner_1' id='imgSlide' onclick='' />");
+        document.writeln("<img src='../img/banner1.png' alt='Banner_1' id='imgSlide' onclick='DivBanClick()' />");
         document.writeln("</pre>");
         document.close();
 
@@ -63,12 +62,12 @@
 
         function timerstart2() {
           imgLeft2 += 80 * direct2;
-          document.getElementById("imgSlide2").style.left = imgLeft2 + "px";
+          document.getElementById('imgSlide2').style.left = imgLeft2 + "px";
           setTimeout('timerstart2()', 80);
           }
         document.open();
         document.writeln("<pre>");
-        document.writeln("<img src='../img/banner2.png' alt='Banner_2' id='imgSlide2' onclick='' />");
+        document.writeln("<img src='../img/banner2.png' alt='Banner_2' id='imgSlide2' onclick='DivBan2Click()' />");
         document.writeln("</pre>");
         document.close();
 

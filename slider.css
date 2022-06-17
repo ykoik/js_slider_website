@@ -3,6 +3,12 @@
 body {
   background-color: black;
 }
+.body {
+  background-color: grey;
+}
+header {
+  text-align: center;
+}
 .header {
   background-color: black;
   min-height: 180px;
@@ -21,14 +27,11 @@ body {
 .content_main {
   display: block;
   position: relative;
-  margin: 0 250px 0 200px;
-  min-width: 320px;
-  max-width: 900px;
+  margin: 0;
 }
 .content_main p {
   max-width: 900px;
 }
-
 .footer {
   clear: both;
   padding: 5px;
@@ -37,12 +40,6 @@ body {
   text-align: center;
   display: block;
   background-color: silver;
-}
-body {
-  background-color: grey;
-}
-header {
-  text-align: center;
 }
 h1 {
   text-indent: 1em;
@@ -82,7 +79,7 @@ p {
 #imgSlide {
   position: absolute;
   top: 130px;
-  width: 98vw;
+  width: 100vw;
   display: block;
   transition-timing-function: ease;
   left: 50%;
@@ -92,6 +89,7 @@ p {
 
 pre {
   border-style:  none;
+  background-color: grey;
   height: 20vh;
   padding: 0;
   margin: 0;
@@ -100,7 +98,7 @@ pre {
 #imgSlide2 {
   position: absolute;
   top: 130px;
-  width: 98vw;
+  width: 100vw;
   display: block;
   transition-timing-function: ease;
   left: 50%;
@@ -108,7 +106,7 @@ pre {
   transform: translate(-50%, -50%);
 }
 
-@keyframes slideIn{
+@keyframes slideshow{
 0%{
   transform: translate(-100vw, 0);
 }
@@ -133,6 +131,7 @@ pre {
 
 pre {
   border-style:  none;
+  background-color: grey;
   height: 12vh;
   padding: 0;
   margin: 0;
@@ -149,7 +148,7 @@ pre {
   transform: translate(-50%, -50%);
 }
 
-@keyframes slideIn{
+@keyframes slideshow{
 0%{
   transform: translate(-100vw, 0);
 }
@@ -173,7 +172,7 @@ pre {
 #imgSlide {
   position: absolute;
   top: 140px;
-  width: 97vw;
+  width: 100vw;
   display: block;
   transition-timing-function: ease;
   left: 50%;
@@ -183,6 +182,7 @@ pre {
 
 pre {
   border-style:  none;
+  background-color: grey;
   height: 9vh;
   padding: 0;
   margin: 0;
@@ -191,7 +191,7 @@ pre {
 #imgSlide2 {
   position: absolute;
   top: 140px;
-  width: 97vw;
+  width: 100vw;
   display: block;
   transition-timing-function: ease;
   left: 50%;
@@ -199,7 +199,7 @@ pre {
   transform: translate(-50%, -50%);
 }
 
-@keyframes slideIn{
+@keyframes slideshow{
 0%{
   transform: translate(-100vw, 0);
 }
