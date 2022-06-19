@@ -30,20 +30,20 @@
         window.onload = slideshow();
 
         function slideshow() {
-        timer0 = setInterval('location.reload()', 3000);
+        timer0 = setInterval('location.reload()', 9000);
            }
 
 
-        timer1 = setInterval('timerstart()', 2600);
+        timer1 = setInterval('timerstart()', 3600);
 
         for (slide = 0; slide < 1; slide++) {
-        let imgLeft = 80;
-        let direct = 1;
+        let imgLeft = 200;
+        let direction = 1;
 
         function timerstart() {
-          imgLeft += 80 * direct;
+          imgLeft += (document.documentElement.clientWidth / imgLeft) * direction;
           document.getElementById('imgSlide').style.left = imgLeft + "px";
-          setTimeout('timerstart()', 80);
+          setTimeout('timerstart()', 10);
           }
 
         document.open();
@@ -57,13 +57,13 @@
 
         for (slide = 0; slide < 1; slide++) {
 
-        let imgLeft2 = 80;
-        let direct2 = 1;
+        let imgLeft2 = 200;
+        let direction2 = 1;
 
         function timerstart2() {
-          imgLeft2 += 80 * direct2;
+          imgLeft2 += (document.documentElement.clientWidth / imgLeft2) * direction2;
           document.getElementById('imgSlide2').style.left = imgLeft2 + "px";
-          setTimeout('timerstart2()', 80);
+          setTimeout('timerstart2()', 10);
           }
         document.open();
         document.writeln("<pre>");

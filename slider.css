@@ -171,7 +171,7 @@ pre {
 /* slider */
 #imgSlide {
   position: absolute;
-  top: 140px;
+  top: 110px;
   width: 100vw;
   display: block;
   transition-timing-function: ease;
@@ -190,7 +190,7 @@ pre {
 
 #imgSlide2 {
   position: absolute;
-  top: 140px;
+  top: 110px;
   width: 100vw;
   display: block;
   transition-timing-function: ease;
