@@ -27,12 +27,9 @@
               document.location.href = ' ';
             }
 
-        window.onload = slideshow();
 
-        function slideshow() {
-        timer0 = setInterval('location.reload()', 9000);
-           }
 
+        timer0 = setInterval(function(){ location.reload(); },9000);
 
         timer1 = setInterval('timerstart()', 3600);
 
